@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./reset.css" />
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+  <title>Calculadora simples</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="calculator--display">
+        <span></span>
+        <p>0</p>
+      </div>
+
+      <div class="calculator--actions">
+        <div class="calculator--actions--empty"></div>
+        <div class="calculator--actions--action" id="clear" onclick="handleClear()">C</div>
+        <div class="calculator--actions--action" id="back" onclick="backspace()">BACK</div>
+        <div class="calculator--actions--action" id="/" onclick="handleAction('/')">/</div>
+
+        <div class="calculator--actions--number" id="7" onclick="handleNumber('7')">7</div>
+        <div class="calculator--actions--number" id="8" onclick="handleNumber('8')">8</div>
+        <div class="calculator--actions--number" id="9" onclick="handleNumber('9')">9</div>
+        <div class="calculator--actions--action" id="*" onclick="handleAction('*')">X</div>
+
+        <div class="calculator--actions--number" id="4" onclick="handleNumber('4')">4</div>
+        <div class="calculator--actions--number" id="5" onclick="handleNumber('5')">5</div>
+        <div class="calculator--actions--number" id="6" onclick="handleNumber('6')">6</div>
+        <div class="calculator--actions--action" id="-" onclick="handleAction('-')">-</div>
+
+        <div class="calculator--actions--number" id="1" onclick="handleNumber('1')">1</div>
+        <div class="calculator--actions--number" id="2" onclick="handleNumber('2')">2</div>
+        <div class="calculator--actions--number" id="3" onclick="handleNumber('3')">3</div>
+        <div class="calculator--actions--action" id="+" onclick="handleAction('+')">+</div>
+
+        <div class="calculator--actions--empty"></div>
+        <div class="calculator--actions--number" id="0" onclick="handleNumber('0')">0</div>
+        <div class="calculator--actions--empty"></div>
+        <div class="calculator--actions--action__calculate" id="=" onclick="handleAction('=')">=</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
